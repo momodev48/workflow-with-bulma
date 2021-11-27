@@ -1,0 +1,113 @@
+.image
+{
+    margin:1em auto;
+    display: block;
+    &__section
+    {
+        @include lg
+        {
+            max-width: 35vw;
+        }
+        @include xl
+        {
+            max-width: 25vw;
+        }
+    }
+    &__uxpressia
+    {
+        content: "";
+        margin: 2.5em auto 3.5vh auto !important;
+        text-align: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 35.4px;
+        width: 200px;
+        background-image: url(../assets/images/uxpressia.png);
+    }
+    &__logo
+    {
+        width: 50vw !important;
+        @include lg
+        {
+            width: 10vw !important;
+        }
+    }
+    &__test
+    {
+        width: 50vw;
+        @include md 
+        {
+            width: 30vw;
+        }
+        @include lg
+        {
+            width: 15vw;
+        }
+    }
+    &__panel
+    {
+        text-align: center;
+        &--jpg
+        {
+            margin: 2em auto 0 auto !important;
+            width: 80vw;
+            @include md
+            {
+                width: 80vw;
+            }
+            @include lg
+            {
+                width: 50vw;
+            }
+            @include xl
+            {
+                width: 30vw;
+            }
+        }
+        &--gif
+        {
+            width: 50vw;
+            @include md
+            {
+                width: 40vw;
+            }
+            @include lg
+            {
+                width: 16vw;
+                float: left;
+                margin-right: 3vw !important;
+            }
+            @include xl
+            {
+                width: 9.5vw;
+                float: left;
+                margin-right: 3vw !important;
+            }
+        }
+    }
+}
+
+.video
+{
+    display: block;
+    width: 100%;
+    height: 280px;
+    margin: 1.5em auto .75em auto !important;
+    text-align: center;
+    @include md
+    {
+        width: 70vw;
+        height: 320px;
+    }
+    @include lg
+    {
+        width: 50vw;
+        height: 310px;
+    }
+    @include xl
+    {
+        width: 30vw;
+        height: 330px;
+    }
+    
+}

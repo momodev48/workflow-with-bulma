@@ -1,0 +1,86 @@
+.header
+{
+    background-image: url(../../assets/images/groupe.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    @include xl {
+        background-image: url(../../assets/images/groupe2.jpg);
+    }
+    &__title, &__sub, &__downbtn
+    {
+        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+        left: 50%;
+        position: absolute;
+    }
+    &__title
+    {
+        font-family: 'Roboto Slab', serif !important;
+        font-weight: 600;
+        color: $c-white;
+        background-color: $c-black1;
+        /* display: block;
+        margin: 0 auto; */
+        text-align: center;
+        width: 70%;
+        padding: 0.8em 0.4em;
+        top: 45%; 
+        font-size: 2em;
+        //bottom: 10vh;
+        @include md 
+        {
+            width: 380px;
+            padding: 0.9em 0.7em;
+        }
+        @include lg
+        {
+            width: 340px;
+            font-size: 2.25em;
+            padding: 0.9em 0.7em;
+        }
+        @include xl {
+            font-size: 2.2em;
+        }
+    }
+    &__sub
+    {
+        top: 53%; /* à 50%/50% du parent référent */
+        font-weight: 500;
+        font-size: 1.5rem !important;
+        @include xl {
+            font-size: 1.4rem !important;
+            font-weight: 200;
+        }
+    }
+    &__downbtn
+    {
+        content: "";
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-size: contain;
+        width: 60px;
+        height: 60px;
+        background-image: url(../assets/icons/down-button.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        &::after
+        {
+            /* display: block;
+            content: "scroller";
+            width: 60px;
+            height: 60px;
+            background-position: center center;
+            margin-top: 70px;
+            color: $c-black2; */
+        }
+    }
+}

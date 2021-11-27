@@ -1,0 +1,190 @@
+/* section     */
+.section
+{
+    padding: 3rem 1.5rem !important;
+    @include lg 
+    {
+        padding: 6rem 1.5rem !important;
+    }
+}
+.solution
+{
+    
+    &__accordion
+    {
+        background-color: $c-white;
+        color: $c-black2;
+        cursor: pointer;
+        padding: 1.5em 2em;
+        width: 100%;
+        text-align: left;
+        border: none;
+        border-left: 5px solid $c-gris-2;
+        outline: none;
+        transition: 0.4s;
+        margin-bottom: 2vh;
+        @include md
+        {
+            font-size: 0.8em;
+        }
+        @include xl
+        {
+            max-width: 900px;
+        }
+        
+        &--1{
+            //margin-top: 2em;
+        }
+
+        
+    }
+    &__accordionimg
+    {
+        &--3
+        {
+            @include lg
+            {
+                display: block;
+                margin: 0 auto !important;
+                text-align: center;
+                float: inherit !important;
+            }
+            @include xl
+            {
+                display: block;
+                margin: 0 auto !important;
+                text-align: center;
+                float: inherit !important;
+            }
+            
+        }
+    }
+    &__panel
+    {
+        padding: 2.5em 1em;
+        background-color: lighten($c-gris-1,100%);
+        display: none; 
+        overflow: hidden;
+        margin-bottom: 2.5vh;
+        @include lg
+        {
+            padding-left: 4vw;
+            padding-right: 4vw;
+        }
+        @include xl
+        {
+            padding-left: 50px;
+            padding-right: 50px;
+            max-width: 800px;
+        }
+        
+    
+        & p 
+        {
+            @include lg 
+            {
+                vertical-align: middle;
+            }
+            @include xl
+            {
+                max-width: 80vw;
+            }
+        }
+        & p:first-child
+        {
+            margin-top: 0;
+        }
+        & p:last-child, figure
+        {
+            padding-bottom: 0em;
+        }
+        & h4
+        {
+            padding-bottom: 1.5em;
+        }
+        
+    }
+    &__paneljpg
+    {
+        
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 80vw;
+        @include md
+        {
+            width: 80vw;
+        }
+        @include lg
+        {
+            width: 50vw;
+        }
+        @include xl
+        {
+            width: 30vw;
+        }
+        
+    }
+    &__panelgif
+    {
+        
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 50vw;
+        @include md
+        {
+            width: 40vw;
+        }
+        @include lg
+        {
+            width: 16vw;
+            float: left;
+            margin-right: 3vw !important;
+        }
+        @include xl
+        {
+            width: 9.5vw;
+            float: left;
+            margin-right: 3vw !important;
+        }
+        
+    }
+    &__panellink
+    {
+        margin-top: 2em;
+        font-weight: 400;
+        background-color: $c-black1;
+        padding: 10px 15px;
+        cursor: pointer;
+        text-decoration:none;
+        color: white;
+        
+        &:hover{
+            background-color: lighten($c-black1,10%)
+
+        } 
+    }
+    .active, &__accordion:hover
+    {
+        background-color: $c-gris-2;
+        color: white;
+    }
+    &__wireframe
+    {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+.avosmarque
+{
+    &__taches
+    {
+        padding: 1em;
+        @include lg
+        {
+            padding: 1em 0 0 0;
+        }
+    }
+}

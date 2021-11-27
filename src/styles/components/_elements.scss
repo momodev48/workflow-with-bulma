@@ -1,0 +1,34 @@
+/* box, button, container, content, icon, image, notification, other, progress, table, tag, title */
+
+
+
+.button
+{
+  margin: 1em 0;
+  cursor: pointer;
+  &__dark
+  {
+    background-color: $c-dark !important;
+    border-color: transparent !important;
+    color: $c-white !important;
+    &:hover, &:focus
+    {
+      background-color: lighten($color: $c-dark, $amount: 10%) !important;
+    }
+  }
+}
+
+.icon
+{
+  &__white
+  {
+    color: $c-white !important;
+  }
+}
+
+.figure
+{
+  text-align: center;
+  margin: 1em auto;
+  
+}
